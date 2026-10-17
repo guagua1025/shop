@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>駿碩電腦｜二手筆電・桌機 現貨</title>
+<meta name="description" content="0 台現貨，點進來看照片、規格、價格">
+<meta property="og:title" content="駿碩電腦｜二手筆電・桌機 現貨">
+<meta property="og:description" content="0 台現貨，點進來看照片、規格、價格">
+<meta property="og:type" content="website">
+
+<meta name="theme-color" content="#14213D">
+<style>
+:root{--ink:#14213D;--ink2:#46506A;--mute:#7A8299;--line:#E4E7EE;--bg:#F6F7FA;--card:#fff;--brand:#1F5FAE;--price:#C2410C;--ok:#15803D;--r:16px}
+*{box-sizing:border-box}html,body{margin:0}
+body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+header{background:var(--ink);color:#fff;padding:22px 18px 18px}
+.wrap{max-width:1080px;margin:0 auto}
+.brand{font-size:1.5rem;font-weight:800;letter-spacing:.02em}
+.tag{color:#C9D2E8;margin-top:4px;font-size:.95rem}
+.hbar{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.hbtn{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);color:#fff;text-decoration:none;border-radius:999px;padding:8px 14px;font-size:.92rem;font-weight:600}
+.hbtn.line{background:#06C755}
+.tools{position:sticky;top:0;z-index:5;background:rgba(246,247,250,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.tools .wrap{padding:10px 14px}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;font:inherit;font-size:.92rem;color:var(--ink2);cursor:pointer}
+.chip.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.row{display:flex;gap:8px;margin-top:8px}
+.row input,.row select{font:inherit;font-size:.95rem;border:1px solid var(--line);background:#fff;border-radius:12px;padding:9px 12px;color:var(--ink)}
+.row input{flex:1;min-width:0}
+main .wrap{padding:14px}
+.count{color:var(--mute);font-size:.88rem;margin:2px 2px 12px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:720px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+@media(min-width:1000px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.card{background:var(--card);border-radius:var(--r);overflow:hidden;box-shadow:0 1px 2px rgba(20,33,61,.06),0 4px 14px rgba(20,33,61,.05);cursor:pointer;display:flex;flex-direction:column;text-decoration:none;border:0;padding:0;text-align:left;font:inherit;color:inherit}
+.ph{aspect-ratio:4/3;background:#E9ECF3 center/cover no-repeat;position:relative}
+.ph .np{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.2rem;color:#B5BDCF}
+.ph .cat{position:absolute;left:8px;top:8px;background:rgba(20,33,61,.78);color:#fff;font-size:.75rem;padding:3px 8px;border-radius:999px}
+.ci{padding:10px 12px 12px;display:flex;flex-direction:column;gap:4px;flex:1}
+.tt{font-weight:700;font-size:.95rem;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pr{color:var(--price);font-weight:800;font-size:1.15rem;margin-top:auto}
+.pr.ask{color:var(--ink2);font-size:.95rem}
+.pid{color:var(--mute);font-size:.78rem}
+.empty{text-align:center;color:var(--mute);padding:60px 10px}
+footer{color:var(--mute);font-size:.85rem;text-align:center;padding:26px 14px 40px;line-height:1.7}
+/* 單台 */
+.sheet{position:fixed;inset:0;background:rgba(10,16,30,.55);z-index:20;display:none;align-items:flex-end;justify-content:center}
+.sheet.on{display:flex}
+.panel{background:#fff;width:100%;max-width:720px;max-height:94vh;overflow:auto;border-radius:20px 20px 0 0;position:relative}
+@media(min-width:720px){.sheet{align-items:center}.panel{border-radius:20px}}
+.x{position:absolute;right:10px;top:10px;z-index:3;width:38px;height:38px;border-radius:50%;border:0;background:rgba(20,33,61,.7);color:#fff;font-size:1.1rem;cursor:pointer}
+.gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;background:#0F172A;scrollbar-width:none}.gal::-webkit-scrollbar{display:none}
+.gal img{flex:none;width:100%;aspect-ratio:4/3;object-fit:contain;scroll-snap-align:center;background:#0F172A}
+.dots{display:flex;gap:5px;justify-content:center;padding:8px 0 0}.dots i{width:7px;height:7px;border-radius:50%;background:#D5DAE5}.dots i.on{background:var(--ink)}
+.pb{padding:14px 18px 22px}
+.pb h1{font-size:1.2rem;margin:4px 0 6px;line-height:1.4}
+.pb .pr{font-size:1.5rem}
+.meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--mute);font-size:.85rem}
+.intro{white-space:pre-wrap;line-height:1.7;color:var(--ink2);margin:14px 0 4px;font-size:.98rem}
+.acts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
+.act{display:flex;align-items:center;justify-content:center;gap:6px;border-radius:12px;padding:13px 10px;font-weight:700;text-decoration:none;border:1px solid var(--line);background:#fff;color:var(--ink)}
+.act.line{background:#06C755;border-color:#06C755;color:#fff;grid-column:1/-1}
+.act.share{cursor:pointer;font:inherit;font-weight:700}
+.note{color:var(--mute);font-size:.82rem;margin-top:12px;line-height:1.6}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand" id="shop"></div>
+  <div class="tag" id="tag"></div>
+  <div class="hbar" id="hbar"></div>
+</div></header>
+<div class="tools"><div class="wrap">
+  <div class="chips" id="chips"></div>
+  <div class="row"><input id="q" type="search" placeholder="搜尋型號、CPU、規格…"><select id="sort"><option value="new">最新上架</option><option value="low">價格低→高</option><option value="high">價格高→低</option></select></div>
+</div></div>
+<main><div class="wrap">
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+</div></main>
+<footer id="foot"></footer>
+<div class="sheet" id="sheet" onclick="if(event.target===this)closeItem()"><div class="panel" id="panel"></div></div>
+<script>
+var S={"shop": "駿碩電腦", "tagline": "二手筆電・桌機 現貨", "phone": "", "address": "", "hours": "", "line_id": "", "line_url": "", "show_pid": true, "updated": "2026/10/18 01:01", "items": []};
+var cat="全部";
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function money(n){return "$"+Number(n).toLocaleString("en-US")}
+function lineLink(it){
+  var id=(S.line_id||"").trim();
+  if(id){ if(id[0]!=="@") id="@"+id; var t=it?("你好，我想問 "+(S.show_pid?("編號 "+it.id+" "):"")+it.title+(it.price?("（"+money(it.price)+"）"):"")+" 還有嗎？"):""; return "https://line.me/R/oaMessage/"+encodeURIComponent(id)+"/"+(t?("?"+encodeURIComponent(t)):""); }
+  return S.line_url||"";
+}
+function mapLink(){return S.address?("https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(S.shop+" "+S.address)):""}
+function head(){
+  document.title=S.shop+"｜"+S.tagline; $("shop").textContent=S.shop; $("tag").textContent=S.tagline;
+  var b=""; var l=lineLink(null);
+  if(l) b+='<a class="hbtn line" href="'+esc(l)+'" target="_blank" rel="noopener">💬 LINE 問我們</a>';
+  if(S.phone) b+='<a class="hbtn" href="tel:'+esc(S.phone.replace(/[^\d+]/g,""))+'">📞 '+esc(S.phone)+'</a>';
+  if(S.address) b+='<a class="hbtn" href="'+esc(mapLink())+'" target="_blank" rel="noopener">📍 店在哪</a>';
+  $("hbar").innerHTML=b;
+  $("foot").innerHTML=esc(S.shop)+(S.address?("<br>"+esc(S.address)):"")+(S.hours?("<br>"+esc(S.hours)):"")+"<br>資料更新 "+esc(S.updated)+"．實際庫存以店內為準";
+  var cats=["全部"]; S.items.forEach(function(it){ if(cats.indexOf(it.cat)<0) cats.push(it.cat); });
+  $("chips").innerHTML=cats.map(function(c){var n=c==="全部"?S.items.length:S.items.filter(function(i){return i.cat===c}).length;return '<button class="chip'+(c===cat?' on':'')+'" data-c="'+esc(c)+'">'+esc(c)+' '+n+'</button>'}).join("");
+  [].forEach.call(document.querySelectorAll(".chip"),function(b){b.onclick=function(){cat=b.getAttribute("data-c");head();render();}});
+}
+function render(){
+  var q=$("q").value.trim().toLowerCase(), so=$("sort").value;
+  var list=S.items.filter(function(it){ return (cat==="全部"||it.cat===cat) && (!q || (it.title+" "+it.intro+" "+it.id+" "+it.cat).toLowerCase().indexOf(q)>=0); });
+  if(so!=="new") list=list.slice().sort(function(a,b){ var x=a.price||1e12, y=b.price||1e12; return so==="low"?x-y:(b.price||0)-(a.price||0); });
+  $("count").textContent="共 "+list.length+" 台現貨";
+  $("grid").innerHTML=list.length?list.map(function(it){
+    var bg=it.photos.length?' style="background-image:url(\''+esc(it.photos[0])+'_t.jpg\')"':"";
+    return '<button class="card" data-id="'+esc(it.id)+'"><div class="ph"'+bg+'>'+(it.photos.length?"":'<div class="np">💻</div>')+'<span class="cat">'+esc(it.cat)+'</span></div>'+
+      '<div class="ci"><div class="tt">'+esc(it.title)+'</div>'+(S.show_pid?'<div class="pid">編號 '+esc(it.id)+'</div>':'')+
+      (it.price?'<div class="pr">'+money(it.price)+'</div>':'<div class="pr ask">價格請洽</div>')+'</div></button>';
+  }).join(""):'<div class="empty">目前沒有符合的機台<br>歡迎直接到店或 LINE 詢問</div>';
+  [].forEach.call(document.querySelectorAll(".card"),function(c){c.onclick=function(){location.hash=encodeURIComponent(c.getAttribute("data-id"))}});
+}
+function openItem(id){
+  var it=S.items.filter(function(i){return i.id===id})[0]; if(!it){closeItem();return;}
+  var g=it.photos.length?it.photos.map(function(p){return '<img src="'+esc(p)+'.jpg" alt="" loading="lazy">'}).join(""):'<div style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:3rem;color:#64748B;width:100%">💻</div>';
+  var l=lineLink(it), acts="";
+  if(l) acts+='<a class="act line" href="'+esc(l)+'" target="_blank" rel="noopener">💬 LINE 問這台</a>';
+  if(S.phone) acts+='<a class="act" href="tel:'+esc(S.phone.replace(/[^\d+]/g,""))+'">📞 打電話</a>';
+  acts+='<button class="act share" onclick="shareItem()">🔗 分享這台</button>';
+  if(S.address) acts+='<a class="act" href="'+esc(mapLink())+'" target="_blank" rel="noopener">📍 店在哪</a>';
+  $("panel").innerHTML='<button class="x" onclick="closeItem()" aria-label="關閉">✕</button><div class="gal" id="gal">'+g+'</div>'+
+    (it.photos.length>1?'<div class="dots" id="dots">'+it.photos.map(function(_,i){return '<i'+(i?'':' class="on"')+'></i>'}).join("")+'</div>':'')+
+    '<div class="pb"><div class="meta"><span>'+esc(it.cat)+'</span>'+(S.show_pid?'<span>編號 '+esc(it.id)+'</span>':'')+'</div><h1>'+esc(it.title)+'</h1>'+
+    (it.price?'<div class="pr">'+money(it.price)+'</div>':'<div class="pr ask">價格請洽</div>')+
+    (it.intro?'<div class="intro">'+esc(it.intro)+'</div>':'')+'<div class="acts">'+acts+'</div>'+
+    '<div class="note">照片為實機拍攝。'+(S.show_pid?'詢問時告訴我們「編號 '+esc(it.id)+'」最快。':'')+'實際庫存以店內為準。</div></div>';
+  $("sheet").classList.add("on"); document.body.style.overflow="hidden";
+  var gal=$("gal"), dots=$("dots");
+  if(dots) gal.onscroll=function(){var i=Math.round(gal.scrollLeft/gal.clientWidth);[].forEach.call(dots.children,function(d,k){d.className=k===i?"on":""})};
+  window._cur=it;
+}
+function closeItem(){ $("sheet").classList.remove("on"); document.body.style.overflow=""; if(location.hash) history.replaceState(null,"",location.pathname+location.search); }
+function shareItem(){
+  var it=window._cur, u=location.href.split("#")[0]+"#"+encodeURIComponent(it.id), t=S.shop+"｜"+it.title+(it.price?(" "+money(it.price)):"");
+  if(navigator.share){ navigator.share({title:t,url:u}).catch(function(){}); }
+  else { var ta=document.createElement("textarea"); ta.value=t+"\n"+u; document.body.appendChild(ta); ta.select(); try{document.execCommand("copy")}catch(e){} ta.remove(); alert("已複製連結"); }
+}
+function route(){ var h=decodeURIComponent(location.hash.slice(1)); if(h) openItem(h); else { $("sheet").classList.remove("on"); document.body.style.overflow=""; } }
+$("q").oninput=render; $("sort").onchange=render; window.onhashchange=route;
+document.addEventListener("keydown",function(e){ if(e.key==="Escape") closeItem(); });
+head(); render(); route();
+</script>
+</body>
+</html>
